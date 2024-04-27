@@ -13,5 +13,11 @@
   <dd> {{cumple}} </dd>
 
 </dl>
-<button class= " btn btn-success mx-2 "> save </button>
-<button class=" btn btn-primary "> clean </button>
+
+<button
+*ngIf="nombre !== 'Spiderman'"
+ (click)="changeHero()"
+ class= " btn btn-success mx-2 "> save </button>
+<button
+(click)="changeAge()"
+class=" btn btn-primary "> clean </button>

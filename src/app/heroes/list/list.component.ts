@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './list.component.css'
 })
 export class ListComponent {
+public heroNames: string[]=['Spiderman','Ironman','Hulk','Thor']
+public deletedHero?:string;
+removeLastHero():void{
+const deletedHero= this.heroNames.pop();
+console.log({deletedHero})
+}
 
 }

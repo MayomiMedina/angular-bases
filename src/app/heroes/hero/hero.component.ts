@@ -17,4 +17,12 @@ export class HeroComponent {
   getHero() :string {
     return `${ this.nombre } - ${ this.edad }`;
   }
+
+  changeHero(): void{
+   this.nombre='Batman';
+  }
+
+  changeAge(): void{
+    this.edad =35;
+  }
 }
